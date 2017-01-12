@@ -11,26 +11,38 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['.js', '.vue']
+    extensions: ['.js', '.vue'],
+    alias: {
+      components: 'src/components',
+      assets: 'assets'
+    }
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        options: {
-          presets: ['es2015']
-        }
+        loader: 'babel-loader'
       }, {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
           loaders: {
-            js: 'babel-loader',
             scss: 'vue-style-loader!css-loader!sass-loader'
           }
         }
+      },
+      {
+        test: /\.scss$/,
+        loader: 'css-loader!sass-loader'
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader?limit=10000&mimetype=application/font-woff'
+      },
+      {
+        test: /\.(ttf|otf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?|(jpg|gif)$/,
+        loader: 'file-loader'
       }
     ]
   },

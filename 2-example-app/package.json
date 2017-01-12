@@ -29,14 +29,21 @@
     "clean-webpack-plugin": "0.1.14",
     "cross-env": "3.1.4",
     "css-loader": "0.26.1",
+    "faker": "3.1.0",
+    "file-loader": "0.9.0",
+    "font-awesome": "4.7.0",
+    "friendly-errors-webpack-plugin": "1.1.2",
     "html-webpack-plugin": "2.26.0",
+    "lodash": "4.17.4",
     "node-sass": "4.1.1",
+    "normalize-scss": "6.0.0",
     "sass-loader": "4.1.1",
+    "url-loader": "0.5.7",
     "vue": "2.1.8",
     "vue-loader": "10.0.2",
     "vue-template-compiler": "2.1.8",
     "webpack": "2.2.0-rc.3",
-    "webpack-merge": "2.2.0"
+    "webpack-merge": "2.4.0"
   },
   "devDependencies": {
     "eslint": "3.12.2",
@@ -44,7 +51,6 @@
     "eslint-import-resolver-webpack": "0.8.0",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-vue": "1.0.0",
-    "friendly-errors-webpack-plugin": "1.1.2",
     "serve": "2.1.2",
     "webpack-bundle-analyzer": "2.2.1",
     "webpack-dev-server": "2.2.0-rc.0"
